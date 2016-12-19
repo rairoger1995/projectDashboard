@@ -54,26 +54,14 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // $route['login'] = 'login/Login_c';
-$route['home'] = 'home';
-$route['logout'] = 'home/logout';
-$route['login'] = 'login/Login_c/loginValidation';
+$route['home'] 					= 'home';
+$route['logout']				= 'home/logout';
+$route['login'] 				= 'login/Login_c/loginValidation';
 
-$route['users_manage'] = 'user/User_c';
-$route['add-user'] = 'user/User_c/form/add';
-$route['edit-user/(:num)'] = 'user/User_c/form/edit/$1';
-$route['user_detail/(:num)'] = 'user/User_c/detail_user/$1';
+$route['users_manage'] 			= 'user/User_c';
+$route['add-user'] 				= 'user/User_c/form/add';
+$route['edit-user/(:num)'] 		= 'user/User_c/form/edit/$1';
+$route['user_detail/(:num)'] 	= 'user/User_c/detail_user/$1';
 
-
-$route['generalfinancial'] = 'home/GeneralFinancial_c';
-$route['accountant'] = 'home/AccountantDB_c';
-$route['financialplanner'] = 'home/FinancialPlannerDB_c';
-$route['mortgage'] = 'home/Mortgage_c';
-
-$route['generalconsumer'] = 'consumer/ConsumerGeneral_c';
-$route['hnwi'] = 'consumer/Hnwi_c';
-
-$route['healthcare'] = 'home/Healthcare_c';
-$route['childcare'] = 'home/Childcare_c';
-
-$route['add-entry'] = 'consumer/Client_add_c/add_data';
-$route['edit-entry'] = 'consumer/Client_edit_c/update_data';
+$route['file_manager']			= 'filemanager/filemanager_c';
+$route['upload']			= 'filemanager/filemanager_c/do_upload';
