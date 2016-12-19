@@ -1,0 +1,15 @@
+[data-jgrid] table a {
+    font-size: 12px!important;
+}
+
+[data-jgrid] th:last-child, [data-jgrid] td:last-child {
+	font-size: 12px;
+}
+
+.add-entry {
+	margin-bottom: 10px;
+}
+
+.filter {
+	margin: 10px 10px;
+}
