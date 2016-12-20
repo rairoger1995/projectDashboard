@@ -63,5 +63,6 @@ $route['add-user'] 				= 'user/User_c/form/add';
 $route['edit-user/(:num)'] 		= 'user/User_c/form/edit/$1';
 $route['user_detail/(:num)'] 	= 'user/User_c/detail_user/$1';
 
-$route['file_manager']			= 'filemanager/filemanager_c';
+$route['upload_file']			= 'filemanager/filemanager_c/upload_file';
 $route['upload']			= 'filemanager/filemanager_c/do_upload';
+$route['view_files']			= 'filemanager/filemanager_c/viewFiles';

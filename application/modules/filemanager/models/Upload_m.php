@@ -11,9 +11,21 @@ class Upload_m extends CI_Model
 
 	function insert($data)
     {
+        // print_r($data['file_name']); die("yeah");
         return $this->db->insert($this->table, [
-            'data_uploaded'    => date('Y-m-d H:i:s'),
-            'userfile'     => $data['userfile'],
+            'filename'     => $data['file_name'],
+            'file_type'     => $data['file_type'],
+            'date_uploaded'    => date('Y-m-d H:i:s'),
         ]);
+    }
+
+    function get_uploadFile()
+    {
+        $result = $this->db->select('filename')
+                           ->get('tbl_uploads');
+
+        $data = $result->result_array();
+        // print_r($data); die();
+        return $data;
     }
 }

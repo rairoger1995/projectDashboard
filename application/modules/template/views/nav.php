@@ -18,7 +18,13 @@
           <li><a href="<?= site_url('users_manage'); ?>">User Manager</a></li>
         <?php endif;
         ?>
-        <li><a href="<?= site_url('file_manager'); ?>">File Manager</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">File Manager <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="<?= site_url('view_files'); ?>">Files</a></li>
+            <li><a href="<?= site_url('upload_file'); ?>">Upload File</a></li>
+          </ul>
+        </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
